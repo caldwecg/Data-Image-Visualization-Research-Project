@@ -21,13 +21,13 @@
                ['Images', 'Selected'],
            ];
 
-           window.all_images.forEach(image=>{
+           window.all_images.forEach(image=&gt;{
                 rows.push([image,newValues.includes(image)]);
 
            })
 
            let csvContent = 'data:text/csv;charset=utf-8,'
-                + rows.map(e => e.join(',')).join('\n');
+                + rows.map(e =&gt; e.join(',')).join('\n');
 
 
           var encodedUri = encodeURI(csvContent);
