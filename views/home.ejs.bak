@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Duodenum, Page 1</title>
+  </head>
+  <body>
+    <h2>This is page 1</h2>
+    <h2>
+      <a href="index1">No more pages before.</a>
+    </h2>
+    <h2>Protein Name: AP1G2</h2>
+    <table border="1" style="table-layout: fixed;">
+        
+      <tr>
+        
+        <% imgFiles.forEach(function (img) { %>
+        
+        <td halign="center" style="word-wrap: break-word;" valign="top">
+          <p>
+            <a href=<%=img%>>
+              <img src=<%=img%> style="width:256px">
+            </a><br>
+            <p>AP1G2_4106_12304_A_7_2.jpg</p>
+          </p>
+        </td>
+        <% }) %>
+        <!-- <td halign="center" style="word-wrap: break-word;" valign="top">
+          <p>
+            <a href="http://images.proteinatlas.org/4106/12304_A_8_2.jpg">
+              <img src="thumbnail/AP1G2/AP1G2_4106_12304_A_8_2.jpg" style="width:256px">
+            </a><br>
+            <p>AP1G2_4106_12304_A_8_2.jpg</p>
+          </p>
+        </td>
+        <td halign="center" style="word-wrap: break-word;" valign="top">
+          <p>
+            <a href="http://images.proteinatlas.org/4106/12304_A_9_2.jpg">
+              <img src="thumbnail/AP1G2/AP1G2_4106_12304_A_9_2.jpg" style="width:256px">
+            </a><br>
+            <p>AP1G2_4106_12304_A_9_2.jpg</p>
+          </p>
+        </td> -->
+      </tr>
+    </table>
+    <h2>Protein Name: RNF123</h2>
+</body>
+</html>
+
